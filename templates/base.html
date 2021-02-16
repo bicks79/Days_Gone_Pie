@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Days Gone Pie</title>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('recipes') }}">Recipes</a></li>
+            <li><a href="{{ url_for('feature') }}">Feature</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </nav>
+
+    {% block header %}
+    {% endblock %}
+
+</body>
+</html>
