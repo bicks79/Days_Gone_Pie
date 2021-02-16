@@ -25,7 +25,7 @@
     </nav>
 
     <!--Jumbotron; codeply-->
-    <div class="container-fluid container-jumbotron" style="background-image: url('{{ url_for('static', filename='images/jumbotron/home.jpg') }}')">
+    <div class="container-fluid container-jumbotron">
         <div class="opaque-overlay">&nbsp;</div>
         <div class="jumbotron" id="tagline">
             <h1>Welcome, bakers!</h1>  
@@ -44,6 +44,13 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid container-recipes">
+        <div class="row">
+            <h2>Recipes</h2>
+        </div>
+    </div>
+
 
     {% block header %}
     {% endblock %}

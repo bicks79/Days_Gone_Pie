@@ -17,31 +17,59 @@ body {
 
 
 /*------------------------------Jumbotron*/
+
+/*jumbotron headers*/
 .jumbotron h1,h3 {
     font-family: 'Poppins', sans-serif;
     margin-left: 30px;
-    
+    color: antiquewhite; 
+    position: relative;
 }
 
+/*jumbotron paragraph text*/
 p.jumbotron-text {
     font-family: 'Open+Sans', sans-serif;
     margin-left: 30px;
+    color: antiquewhite; 
+    position: relative;
 }
 
+/*jumbotron button*/
 .btn-jumbotron {
     margin-left: 30px;
     background-color: #79c4bd;
-    border: bisque;
+    border: #ffffff;
     border-radius: 2px;
 }
 
-
-/*------------------------------Containers*/
+/*jumbotron background image*/
 .container-jumbotron {
+    background-image: url(../images/jumbotron/home.jpg);
     background-image: no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 75vh;
+    position: relative;
 }
+
+/*------------------------------Coder Coder*/
+.container-jumbotron::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+/*------------------------------Recipes Home page*/
+
+.container-recipes h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
