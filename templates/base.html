@@ -3,21 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--External style library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <title>Days Gone Pie</title>
 </head>
 <body>
     
+    <!--Navigation bar; Materialize-->
     <nav>
-        <ul>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-            <li><a href="{{ url_for('recipes') }}">Recipes</a></li>
-            <li><a href="{{ url_for('feature') }}">Feature</a></li>
-            <li><a href="{{ url_for('login') }}">Login</a></li>
-        </ul>
+        <div class="nav-wrapper">
+            <a href="{{ url_for('index') }}" class="brand-logo">Days Gone Pie</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('recipes') }}">Recipes</a></li>
+                <li><a href="{{ url_for('feature') }}">Feature</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </div>
     </nav>
+
+    <!--Jumbotron; codeply-->
+    <div class="container-fluid container-jumbotron" style="background-image: url('{{ url_for('static', filename='images/jumbotron/home.jpg') }}')">
+        <div class="opaque-overlay">&nbsp;</div>
+        <div class="jumbotron" id="tagline">
+            <h1>Welcome, bakers!</h1>  
+        </div>
+        <div class="row">
+            <div class="col m6">
+                <h3>About</h3>
+                <p class="jumbotron-text">
+                    Welcome to days gone pie, the recipe site that is here to help you become the star 
+                    baker of your own kitchen! Every recipe is provided by the community, so you know that each one has been tested
+                    and approved by friends and family all over the world! From beautiful breads to delicious desserts. 
+                    Spectacular showstoppers to perfect pastry, there's something for everyone.
+                    So, grab your mixing bowls and pre-heat those ovens because it’s time to get baking!
+                </p>
+                <button class="btn btn-flat btn-jumbotron waves-effect waves-light white-text">Sign Up!</button>
+            </div>
+        </div>
+    </div>
 
     {% block header %}
     {% endblock %}
 
+    <!--External script library-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script scr="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
