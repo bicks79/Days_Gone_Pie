@@ -14,6 +14,25 @@
     <!--Navigation bar; Materialize-->
     <nav>
         <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Days Gone Pie</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('recipes') }}">Recipes</a></li>
+                <li><a href="{{ url_for('feature') }}">Feature</a></li>
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('recipes') }}">Recipes</a></li>
+            <li><a href="{{ url_for('feature') }}">Feature</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+    </ul>
+
+        <!--<div class="nav-wrapper">
             <a href="{{ url_for('index') }}" class="brand-logo">Days Gone Pie</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="{{ url_for('index') }}">Home</a></li>
@@ -21,7 +40,7 @@
                 <li><a href="{{ url_for('feature') }}">Feature</a></li>
                 <li><a href="{{ url_for('login') }}">Login</a></li>
             </ul>
-        </div>
+        </div>-->
     </nav>
 
     <!--Jumbotron; codeply-->
@@ -31,7 +50,7 @@
             <h1>Welcome, bakers!</h1>  
         </div>
         <div class="row">
-            <div class="col m6">
+            <div class="col s12 m6">
                 <p class="jumbotron-text">
                     Days gone pie is the recipe site here to help you become the star baker of your own kitchen! 
                     Every recipe is provided by the community, so you know that each one has been tested and 

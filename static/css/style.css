@@ -5,6 +5,10 @@ body {
     padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*------------------------------Navbar*/
 .nav-wrapper {
     background-color: #2e837a;
@@ -110,7 +114,8 @@ p.jumbotron-text {
 /*------------------------------Recipe category images*/
 .card-image-bread {
     background-image: url(../images/recipe-categories/bread.jpg);
-    background-image: no-repeat center;
+    background-image: no-repeat;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -123,7 +128,8 @@ p.jumbotron-text {
 
 .card-image-cake {
     background-image: url(../images/recipe-categories/cake.jpg);
-    background-image: no-repeat center;
+    background-image: no-repeat;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -136,7 +142,8 @@ p.jumbotron-text {
 
 .card-image-dessert {
     background-image: url(../images/recipe-categories/dessert.jpg);
-    background-image: no-repeat right center;
+    background-image: no-repeat;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -149,7 +156,8 @@ p.jumbotron-text {
 
 .card-image-pastry {
     background-image: url(../images/recipe-categories/pastry.jpg);
-    background-image: no-repeat right bottom;
+    background-image: no-repeat;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -169,4 +177,15 @@ p.jumbotron-text {
 .featured-user {
     font-family: 'Poppins', sans-serif;
     text-align: center;
+}
+
+/*------------------------------recipe cards*/
+.recipe-header {
+    margin-top: 60px;
+}
+
+.card{
+    justify-content: center;
+    text-align: center;
+
 }
